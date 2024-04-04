@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Ancient Quotes</title> 
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    #quote {
+        font-size: 24px;
+        margin-top: 100px;
+    }
+</style> 
+ </head> 
+ <body> 
+  <div id="quote"></div> 
+  <script>
+    // Array of historical quotes with their authors
+   
+   var quotes = [
+    { quote: "The only true wisdom is in knowing you know nothing.", author: "Socrates" },
+    { quote: "Happiness depends upon ourselves.", author: "Aristotle" },
+    { quote: "The journey of a thousand miles begins with one step.", author: "Lao Tzu" },
+    { quote: "Knowing others is intelligence; knowing yourself is true wisdom.", author: "Lao Tzu" },
+    { quote: "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.", author: "Ralph Waldo Emerson" },
+    { quote: "The unexamined life is not worth living.", author: "Socrates" },
+    { quote: "In three words I can sum up everything I've learned about life: it goes on.", author: "Robert Frost" },
+    { quote: "We are what we repeatedly do. Excellence, then, is not an act, but a habit.", author: "Aristotle" },
+    { quote: "The only way to do great work is to love what you do.", author: "Steve Jobs" },
+    { quote: "All that we are is the result of what we have thought.", author: "Buddha" },
+    { quote: "He who is not courageous enough to take risks will accomplish nothing in life.", author: "Muhammad Ali" },
+    { quote: "The only thing we have to fear is fear itself.", author: "Franklin D. Roosevelt" },
+    { quote: "Life is what happens when you're busy making other plans.", author: "John Lennon" },
+    { quote: "Strive not to be a success, but rather to be of value.", author: "Albert Einstein" },
+    { quote: "You miss 100% of the shots you don't take.", author: "Wayne Gretzky" },
+    { quote: "In the end, it's not the years in your life that count. It's the life in your years.", author: "Abraham Lincoln" },
+    { quote: "It does not matter how slowly you go as long as you do not stop.", author: "Confucius" },
+    { quote: "The only source of knowledge is experience.", author: "Albert Einstein" },
+    { quote: "Believe you can and you're halfway there.", author: "Theodore Roosevelt" },
+    { quote: "Life is 10% what happens to us and 90% how we react to it.", author: "Charles R. Swindoll" },
+    { quote: "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.", author: "Marie Curie" },
+    { quote: "Don't judge each day by the harvest you reap but by the seeds that you plant.", author: "Robert Louis Stevenson" },
+    { quote: "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.", author: "Helen Keller" },
+    { quote: "It is during our darkest moments that we must focus to see the light.", author: "Aristotle" },
+    { quote: "It always seems impossible until it's done.", author: "Nelson Mandela" },
+    { quote: "The greatest glory in living lies not in never falling, but in rising every time we fall.", author: "Nelson Mandela" },
+    { quote: "Life is really simple, but we insist on making it complicated.", author: "Confucius" },
+    { quote: "When you reach the end of your rope, tie a knot in it and hang on.", author: "Franklin D. Roosevelt" },
+    { quote: "The purpose of our lives is to be happy.", author: "Dalai Lama" },
+    { quote: "Many of life's failures are people who did not realize how close they were to success when they gave up.", author: "Thomas A. Edison" },
+    { quote: "You can't go back and change the beginning, but you can start where you are and change the ending.", author: "C.S. Lewis" },
+    { quote: "Life is like riding a bicycle. To keep your balance, you must keep moving.", author: "Albert Einstein" },
+    { quote: "The only way to make sense out of change is to plunge into it, move with it, and join the dance.", author: "Alan Watts" },
+    { quote: "The only limit to our realization of tomorrow will be our doubts of today.", author: "Franklin D. Roosevelt" },
+    { quote: "Success is not final, failure is not fatal: It is the courage to continue that counts.", author: "Winston Churchill" },
+    { quote: "You are never too old to set another goal or to dream a new dream.", author: "C.S. Lewis" },
+    { quote: "The future belongs to those who believe in the beauty of their dreams.", author: "Eleanor Roosevelt" },
+    { quote: "The best revenge is massive success.", author: "Frank Sinatra" },
+    { quote: "You have power over your mind - not outside events. Realize this, and you will find strength.", author: "Marcus Aurelius" },
+    { quote: "Life isn't about finding yourself. Life is about creating yourself.", author: "George Bernard Shaw" },
+    { quote: "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.", author: "Albert Schweitzer" },
+    { quote: "Opportunities don't happen. You create them.", author: "Chris Grosser" },
+    { quote: "The secret of getting ahead is getting started.", author: "Mark Twain" },
+    { quote: "The best time to plant a tree was 20 years ago. The second best time is now.", author: "Chinese Proverb" },
+    { quote: "Whatever you can do, or dream you can, begin it. Boldness has genius, power, and magic in it.", author: "Johann Wolfgang von Goethe" },
+    { quote: "Keep your face always toward the sunshine - and shadows will fall behind you.", author: "Walt Whitman" },
+    { quote: "Life is what we make it, always has been, always will be.", author: "Grandma Moses" },
+    { quote: "What you get by achieving your goals is not as important as what you become by achieving your goals.", author: "Zig Ziglar" },
+    { quote: "The best way to predict the future is to create it.", author: "Peter Drucker" },
+    { quote: "The only limit to our realization of tomorrow will be our doubts of today.", author: "Franklin D. Roosevelt" },
+    { quote: "It's not whether you get knocked down, it's whether you get up.", author: "Vince Lombardi" },
+];
+
+    // Function to display a random quote
+    function displayRandomQuote() {
+        var randomIndex = Math.floor(Math.random() * quotes.length);
+        var randomQuote = quotes[randomIndex];
+        var quoteElement = document.getElementById("quote");
+        quoteElement.innerHTML = "<p>" + randomQuote.quote + "</p><p>- " + randomQuote.author + "</p>";
+    }
+
+    // Display a random quote when the page loads
+    displayRandomQuote();
+</script> 
+ </body>
+</html>
